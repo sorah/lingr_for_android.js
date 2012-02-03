@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ti:app xmlns:ti="http://ti.appcelerator.org">
+    <property name="ti.android.runtime">v8</property>
     <deployment-targets>
-        <target device="mobileweb">false</target>
+        <target device="mobileweb">true</target>
         <target device="android">true</target>
     </deployment-targets>
     <sdk-version>1.8.1</sdk-version>
-    <id>org.ajunk.titanium.lingr</id>
+    <id>tk.no32.com.lingr</id>
     <name>Lingr</name>
-    <version>1.0</version>
+    <version>1.1</version>
     <publisher>takano32</publisher>
-    <url>http://ajunk.org/</url>
+    <url>http://taka.no32.tk/</url>
     <description>Lingr Client for Android</description>
     <copyright>TAKANO Mitsuhiro, 2012</copyright>
     <icon>icon.png</icon>
