@@ -43,7 +43,7 @@ Ti.Android.currentActivity.onCreateOptionsMenu = function(e) {
 var data = [];
 data[0] = Ti.UI.createTableViewRow({
   title: 'Connecting...',
-  font: {fontSize: 16}
+  font: {fontSize: 24}
 });
 var view = Titanium.UI.createTableView({
   backgroundColor: 'black',
@@ -56,7 +56,7 @@ var connect_to_lingr = function() {
   Ti.API.info("Focused, Connecting to Lingr... "+Ti.App.Properties.getString("session"));
   view.setData([Ti.UI.createTableViewRow({
     title: 'Connecting...',
-    font: {fontSize: 16}
+    font: {fontSize: 24}
   })]);
   lingr = new Lingr.API(Ti.App.Properties.getString("username"),Ti.App.Properties.getString("password"),Ti.App.Properties.getString("session"));
   if(menu_connect) {
@@ -113,7 +113,7 @@ var connect_to_lingr = function() {
       room.row_label = Ti.UI.createLabel({
         text: room.name,
         left: "5px",
-        font: {fontSize: 16}
+        font: {fontSize: 24}
       });
 
       room.row.add(room.lamp);
@@ -158,7 +158,7 @@ var connect_message = function(){
   menu_connect.title = "Connect";
   view.setData([Ti.UI.createTableViewRow({
     title: 'Tap "Connect" from menu to connect.',
-    font: {fontSize: 16}
+    font: {fontSize: 24}
   })]);
 }
 if(Ti.App.Properties.hasProperty("username") && Ti.App.Properties.hasProperty("password")) {

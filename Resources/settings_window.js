@@ -5,7 +5,7 @@ data[0].label = Ti.UI.createLabel({
   text: "Account",
   left: 0,
   top: 10,
-  font: {fontSize: 18}
+  font: {fontSize: 24}
 });
 data[0].add(data[0].label);
 /*data[1] = Ti.UI.createTableViewRow({});
@@ -13,7 +13,7 @@ data[1].label = Ti.UI.createLabel({
   text: "Notify when ID called",
   left: 0,
   top: 10,
-  font: {fontSize: 18}
+  font: {fontSize: 24}
 });
 data[1].check_box = Ti.UI.createSwitch({
   value:Ti.App.Properties.getBool("notification"),

@@ -18,7 +18,7 @@ function generate_row(member) {
     top: 6,
     left: "40px",
     text: member.name,
-    font: {fontSize: 16}
+    font: {fontSize: 24}
   });
 
   row.user_image = Titanium.UI.createImageView({
