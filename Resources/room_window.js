@@ -6,7 +6,8 @@ RoomUI = function(room) {
   this.room.ui = this;
   this.win = Ti.UI.createWindow({
     fullscreen: false,
-    title: "Lingr: "+room.name,
+    title: "Lingr: " + room.name,
+    fontSize: 24,
     windowSoftInputMode: Ti.UI.Android.SOFT_INPUT_ADJUST_RESIZE,
     activity: {
       onCreateOptionsMenu: function(e) {
@@ -16,7 +17,7 @@ RoomUI = function(room) {
         m1.addEventListener('click',Lingr.yakisoba(this,function(){
           var memberw = Ti.UI.createWindow({
             url: "members_window.js",
-            title: "Lingr: Members in "+room.name,
+            title: "Lingr: Members in " + room.name,
             fullscreen: false
           });
           memberw.room = room;

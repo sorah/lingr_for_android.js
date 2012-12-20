@@ -223,7 +223,7 @@ Lingr.API.prototype.test = function(callback) { // {{{
   this.unsession();
   this.signin(function() {
     callback(true);
-    this.disconnect();
+    // this.disconnect();
   },function() {
     callback(false);
   });
