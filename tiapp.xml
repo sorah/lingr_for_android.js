@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ti:app xmlns:ti="http://ti.appcelerator.org">
-<id>org.ajunk.titanium.lingr</id>
-<name>Lingr</name>
-<version>1.0</version>
-<publisher>Shota Fukumori (sora_h)</publisher>
-<url>http://ajunk.org/</url>
-<description>Lingr Client for Android</description>
-<copyright>Shota Fukumori (sora_h), 2011</copyright>
-<icon>icon.png</icon>
+    <property name="ti.android.runtime">v8</property>
+    <deployment-targets>
+        <target device="mobileweb">false</target>
+        <target device="android">true</target>
+    </deployment-targets>
+    <sdk-version>2.1.4.GA</sdk-version>
+    <id>tk.no32.lingr</id>
+    <name>Lingr</name>
+    <version>1.4</version>
+    <publisher>takano32</publisher>
+    <url>http://taka.no32.tk/</url>
+    <description>Lingr Client for Android</description>
+    <copyright>TAKANO Mitsuhiro, 2012</copyright>
+    <icon>icon.png</icon>
     <persistent-wifi>false</persistent-wifi>
     <prerendered-icon>false</prerendered-icon>
     <statusbar-style>default</statusbar-style>
@@ -15,20 +21,18 @@
     <fullscreen>false</fullscreen>
     <navbar-hidden>false</navbar-hidden>
     <analytics>true</analytics>
-<guid>37925013-90a5-443e-812c-030a61cf3e31</guid>
-	<iphone>
-		<orientations device="iphone">
-			<orientation>Ti.UI.PORTRAIT</orientation>
-		</orientations>
-		<orientations device="ipad">
-			<orientation>Ti.UI.PORTRAIT</orientation>
-			<orientation>Ti.UI.UPSIDE_PORTRAIT</orientation>
-			<orientation>Ti.UI.LANDSCAPE_LEFT</orientation>
-			<orientation>Ti.UI.LANDSCAPE_RIGHT</orientation>
-		</orientations>
-	</iphone>
-	<android xmlns:android="http://schemas.android.com/apk/res/android">
-	</android>
-	<modules>
-	</modules>
+    <guid>37925013-90a5-443e-812c-030a61cf3e31</guid>
+    <iphone>
+        <orientations device="iphone">
+            <orientation>Ti.UI.PORTRAIT</orientation>
+        </orientations>
+        <orientations device="ipad">
+            <orientation>Ti.UI.PORTRAIT</orientation>
+            <orientation>Ti.UI.UPSIDE_PORTRAIT</orientation>
+            <orientation>Ti.UI.LANDSCAPE_LEFT</orientation>
+            <orientation>Ti.UI.LANDSCAPE_RIGHT</orientation>
+        </orientations>
+    </iphone>
+    <android xmlns:android="http://schemas.android.com/apk/res/android"/>
+    <modules/>
 </ti:app>
